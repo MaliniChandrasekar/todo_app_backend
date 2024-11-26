@@ -1,0 +1,18 @@
+meta {
+  name: Create Todo
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{baseURL}}/todo/add
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name" : "Create a Todo",
+    "description" : "Write a code to create"
+  }
+}
